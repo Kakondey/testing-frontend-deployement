@@ -16,7 +16,7 @@ export default class Book extends Component {
   }
 
   async loadBooks() {
-    const promise = await axios.get("http://127.0.0.1:8000/book/");
+    const promise = await axios.get("http://13.233.201.60/book/");
     const status = promise.status;
 
     if (status === 200) {
